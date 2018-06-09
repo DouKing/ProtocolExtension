@@ -24,7 +24,7 @@
 
 // Get container class name by counter
 #define _pex_get_container_class($protocol) _pex_get_container_class_imp($protocol, __COUNTER__)
-#define _pex_get_container_class_imp($protocol, $counter) _pex_get_container_class_imp_concat(__PKContainer_, $protocol, $counter)
+#define _pex_get_container_class_imp($protocol, $counter) _pex_get_container_class_imp_concat(__PEXContainer_, $protocol, $counter)
 #define _pex_get_container_class_imp_concat($a, $b, $c) $a ## $b ## _ ## $c
 
 void _pex_extension_load(Protocol *protocol, Class cls);
